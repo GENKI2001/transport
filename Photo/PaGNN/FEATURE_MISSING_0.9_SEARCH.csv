@@ -1,0 +1,3 @@
+model,dataset,label_noise_type,label_noise_rate,feature_missing_type,feature_missing_rate,feature_noise_rate,seed,epochs,lr,weight_decay,hidden_channels,num_layers,dropout,label_max_hops,label_temperature,airgnn_alpha,airgnn_lambda_amp,lp_alpha,goodie_lamb,train,val,test,best_test_at_val,time
+PaGNN,Photo,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,64,1,0.5,1,0.25,0.0,0.0,0.99,1.0,0.816±0.011,0.810±0.014,0.810±0.012,0.810±0.012,15.02±2.11s
+PaGNN,Photo,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,128,2,0.5,1,0.25,0.0,0.0,0.99,1.0,0.814±0.014,0.809±0.022,0.808±0.016,0.808±0.016,6.72±1.11s

@@ -1,0 +1,17 @@
+model,dataset,label_noise_type,label_noise_rate,feature_missing_type,feature_missing_rate,feature_noise_rate,seed,epochs,lr,weight_decay,hidden_channels,num_layers,dropout,label_max_hops,label_temperature,airgnn_alpha,airgnn_lambda_amp,lp_alpha,goodie_lamb,train,val,test,best_test_at_val,time
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,1,0.5,2,0.5,0.0,0.0,0.99,1.0,0.888±0.007,0.831±0.004,0.832±0.004,0.832±0.004,3.95±0.29s
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,1,0.5,2,0.5,0.0,0.0,0.99,1.0,0.895±0.007,0.868±0.005,0.838±0.006,0.838±0.006,7.99±2.18s
+
+// full
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,2,0.5,0.0,0.0,0.99,1.0,0.898±0.010,0.866±0.003,0.838±0.004,0.838±0.004,14.54±5.43s
+// w/o feat
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,2,0.5,0.0,0.0,0.99,1.0,0.869±0.003,0.870±0.003,0.830±0.005,0.830±0.005,21.68±3.17s
+// w/o label
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,2,0.5,0.0,0.0,0.99,1.0,0.858±0.014,0.812±0.005,0.808±0.006,0.808±0.006,8.20±1.42s
+// w/o dynamic gate
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,2,0.5,0.0,0.0,0.99,1.0,0.903±0.004,0.868±0.004,0.837±0.006,0.837±0.006,18.70±3.29s
+
+// LP
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,1,0.5,0.0,0.0,0.99,1.0,0.926±0.015,0.838±0.004,0.837±0.005,0.837±0.005,4.71±0.54s
+// Mean
+LRGCN,Pubmed,uniform,0.0,uniform,0.9,0.0,1000,1000,0.01,0.0005,32,2,0.5,2,0.5,0.0,0.0,0.99,1.0,0.909±0.005,0.872±0.004,0.835±0.005,0.835±0.005,13.85±2.08s

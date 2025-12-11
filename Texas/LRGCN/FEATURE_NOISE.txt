@@ -1,0 +1,2 @@
+python main.py --dataset_name Texas --model LRGCN --label_noise_rate 0 --feature_missing_rate 0.0 --feature_noise_rate 0.9 --hidden_channels 128 --num_layers 1 --label_max_hops 4 --label_temperature 0.125 --airgnn_alpha 0 --airgnn_lambda_amp 0 --lp_alpha 0.99 --goodie_lamb 1 --n_runs 100 --epochs 1000 --early_stopping True --patience 100 --disable_tqdm True --results_csv experiments/Texas/LRGCN/FEATURE_NOISE.csv
+
